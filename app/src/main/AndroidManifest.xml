@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ifelse"
+        tools:targetApi="31">
+        <activity
+            android:name=".Tempo"
+            android:exported="false" />
+        <activity
+            android:name=".Temp"
+            android:exported="false" />
+        <activity
+            android:name=".a86"
+            android:exported="false" />
+        <activity
+            android:name=".a85"
+            android:exported="false" />
+        <activity
+            android:name=".a84"
+            android:exported="false" />
+        <activity
+            android:name=".a83"
+            android:exported="false" />
+        <activity
+            android:name=".a82"
+            android:exported="false" />
+        <activity
+            android:name=".a81"
+            android:exported="false" />
+        <activity
+            android:name=".a80"
+            android:exported="false" />
+        <activity
+            android:name=".a79"
+            android:exported="false" />
+        <activity
+            android:name=".a78"
+            android:exported="false" />
+        <activity
+            android:name=".a66"
+            android:exported="false" />
+        <activity
+            android:name=".a75"
+            android:exported="false" />
+        <activity
+            android:name=".a77"
+            android:exported="false" />
+        <activity
+            android:name=".a76"
+            android:exported="false" />
+        <activity
+            android:name=".a74"
+            android:exported="false" />
+        <activity
+            android:name=".a73"
+            android:exported="false" />
+        <activity
+            android:name=".a72"
+            android:exported="false" />
+        <activity
+            android:name=".a71"
+            android:exported="false" />
+        <activity
+            android:name=".a70"
+            android:exported="false" />
+        <activity
+            android:name=".a69"
+            android:exported="false" />
+        <activity
+            android:name=".a68"
+            android:exported="false" />
+        <activity
+            android:name=".a67"
+            android:exported="false" />
+        <activity
+            android:name=".a65"
+            android:exported="false" />
+        <activity
+            android:name=".a64"
+            android:exported="false" />
+        <activity
+            android:name=".a63"
+            android:exported="false" />
+        <activity
+            android:name=".a62"
+            android:exported="false" />
+        <activity
+            android:name=".a61"
+            android:exported="false" />
+        <activity
+            android:name=".a60"
+            android:exported="false" />
+        <activity
+            android:name=".a59"
+            android:exported="false" />
+        <activity
+            android:name=".a58"
+            android:exported="false" />
+        <activity
+            android:name=".a57"
+            android:exported="false" />
+        <activity
+            android:name=".a56"
+            android:exported="false" />
+        <activity
+            android:name=".a55"
+            android:exported="false" />
+        <activity
+            android:name=".a54"
+            android:exported="false" />
+        <activity
+            android:name=".a53"
+            android:exported="false" />
+        <activity
+            android:name=".a52"
+            android:exported="false" />
+        <activity
+            android:name=".a51"
+            android:exported="false" />
+        <activity
+            android:name=".a50"
+            android:exported="false" />
+        <activity
+            android:name=".a49"
+            android:exported="false" />
+        <activity
+            android:name=".a47"
+            android:exported="false" />
+        <activity
+            android:name=".a46"
+            android:exported="false" />
+        <activity
+            android:name=".a48"
+            android:exported="false" />
+        <activity
+            android:name=".a45"
+            android:exported="false" />
+        <activity
+            android:name=".a42"
+            android:exported="false" />
+        <activity
+            android:name=".a44"
+            android:exported="false" />
+        <activity
+            android:name=".a43"
+            android:exported="false" />
+        <activity
+            android:name=".a41"
+            android:exported="false" />
+        <activity
+            android:name=".a37"
+            android:exported="false" />
+        <activity
+            android:name=".a40"
+            android:exported="false" />
+        <activity
+            android:name=".a39"
+            android:exported="false" />
+        <activity
+            android:name=".a38"
+            android:exported="false" />
+        <activity
+            android:name=".a36"
+            android:exported="false" />
+        <activity
+            android:name=".a35"
+            android:exported="false" />
+        <activity
+            android:name=".a34"
+            android:exported="false" />
+        <activity
+            android:name=".a33"
+            android:exported="false" />
+        <activity
+            android:name=".a32"
+            android:exported="false" />
+        <activity
+            android:name=".a31"
+            android:exported="false" />
+        <activity
+            android:name=".a30"
+            android:exported="false" />
+        <activity
+            android:name=".a29"
+            android:exported="false" />
+        <activity
+            android:name=".a28"
+            android:exported="false" />
+        <activity
+            android:name=".a27"
+            android:exported="false" />
+        <activity
+            android:name=".a26"
+            android:exported="false" />
+        <activity
+            android:name=".a25"
+            android:exported="false" />
+        <activity
+            android:name=".a24"
+            android:exported="false" />
+        <activity
+            android:name=".a23"
+            android:exported="false" />
+        <activity
+            android:name=".a22"
+            android:exported="false" />
+        <activity
+            android:name=".a21"
+            android:exported="false" />
+        <activity
+            android:name=".a20"
+            android:exported="false" />
+        <activity
+            android:name=".a19"
+            android:exported="false" />
+        <activity
+            android:name=".s19"
+            android:exported="false" />
+        <activity
+            android:name=".a18"
+            android:exported="false" />
+        <activity
+            android:name=".a17"
+            android:exported="false" />
+        <activity
+            android:name=".a16"
+            android:exported="false" />
+        <activity
+            android:name=".a15"
+            android:exported="false" />
+        <activity
+            android:name=".a14"
+            android:exported="false" />
+        <activity
+            android:name=".a13"
+            android:exported="false" />
+        <activity
+            android:name=".a12"
+            android:exported="false" />
+        <activity
+            android:name=".a11"
+            android:exported="false" />
+        <activity
+            android:name=".a10"
+            android:exported="false" />
+        <activity
+            android:name=".a9"
+            android:exported="false" />
+        <activity
+            android:name=".a8"
+            android:exported="false" />
+        <activity
+            android:name=".a7"
+            android:exported="false" />
+        <activity
+            android:name=".a6"
+            android:exported="false" />
+        <activity
+            android:name=".a5"
+            android:exported="false" />
+        <activity
+            android:name=".a4"
+            android:exported="false" />
+        <activity
+            android:name=".activity3"
+            android:exported="false"
+            android:label="@string/title_activity_3"
+            android:theme="@style/Theme.Ifelse" />
+        <activity
+            android:name=".activity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
