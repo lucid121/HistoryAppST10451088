@@ -16,9 +16,6 @@
             android:name=".Tempo"
             android:exported="false" />
         <activity
-            android:name=".Temp"
-            android:exported="false" />
-        <activity
             android:name=".a86"
             android:exported="false" />
         <activity
@@ -221,9 +218,6 @@
             android:exported="false" />
         <activity
             android:name=".a19"
-            android:exported="false" />
-        <activity
-            android:name=".s19"
             android:exported="false" />
         <activity
             android:name=".a18"
