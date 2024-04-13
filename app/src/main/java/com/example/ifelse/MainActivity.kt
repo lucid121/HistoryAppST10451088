@@ -1,5 +1,5 @@
-package com.example.ifelse
 
+package com.example.ifelse
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -7,21 +7,49 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button = findViewById<Button>(R.id.blob)
-        val numberEditText = findViewById<EditText>(R.id.bobs)
-        val clearButton = findViewById<Button>(R.id.button)
 
+        val button = findViewById<Button>(R.id.blob)// Find the button view by its id.
+
+        val numberEditText = findViewById<EditText>(R.id.bobs) // Find the EditText view by its ID for the number input
+
+        val clearButton = findViewById<Button>(R.id.button) // Find clear button view by its ID and initialize it for clearing input
+
+        // setOnClickListener, when user clicks
         button.setOnClickListener {
-            val userInput = numberEditText.text.toString().toIntOrNull()
-            if (userInput != null) {
-                val nextActivityIntent = Intent(this, Tempo::class.java)
-                nextActivityIntent.putExtra("next_activity", when (userInput) {
-                    14 -> a5::class.java
+
+            val userInputString = numberEditText.text.toString()// Get the user input from the EditText as a String
+
+            val userInput = userInputString.toIntOrNull()// Turn the String to an Int, or null
+
+
+            val minValidInput = 14// Make the lowest
+            val maxValidInput = 95// Make the highest
+
+            when {
+                userInputString.isBlank() -> {
+                    Toast.makeText(this, "Input provided. Please enter a number.", Toast.LENGTH_SHORT).show()
+                }
+                userInput == null -> {
+                    Toast.makeText(this, "Don't enter a letter or symbol. Please enter a number.", Toast.LENGTH_SHORT).show()
+                }
+                userInput < minValidInput -> {
+                    Toast.makeText(this, "Error: Number too low. Please enter a number between $minValidInput and $maxValidInput.", Toast.LENGTH_SHORT).show()
+                }
+                userInput > maxValidInput -> {
+                    Toast.makeText(this, "Error: Number too high. Please enter a number between $minValidInput and $maxValidInput.", Toast.LENGTH_SHORT).show()
+                }
+                else -> {
+
+                    val nextActivityIntent = Intent(this, Tempo::class.java)// Create an Intent to start the Tempo activity
+                    // Use a 'when' statement to determine which activity to start based on the user input
+                    nextActivityIntent.putExtra("next_activity", when (userInput) {
+                    14 -> a5::class.java // If userInput is 14, start a5 activity and for the rest
                     16 -> a6::class.java
                     15 -> a7::class.java
                     17 -> a8::class.java
@@ -103,25 +131,25 @@ class MainActivity : AppCompatActivity() {
                     93 -> a84::class.java
                     94 -> a85::class.java
                     95 -> a86::class.java
-                    else -> null
-                })
-                if (nextActivityIntent.getSerializableExtra("next_activity") != null) {
-                    startActivity(nextActivityIntent)
-                } else {
-                    Toast.makeText(this, "Invalid input", Toast.LENGTH_SHORT).show()
+                        else -> null
+                    })
+                    // Check if the next activity extra is not null
+                    if (nextActivityIntent.getSerializableExtra("next_activity") != null) {
+                        startActivity(nextActivityIntent)
+                    } else {
+                        Toast.makeText(this, "don't input a letter or symbol, enter a number between $minValidInput and $maxValidInput", Toast.LENGTH_SHORT).show()
+                    }
                 }
-            } else {
-                Toast.makeText(this, "Please enter a valid number", Toast.LENGTH_SHORT).show()
             }
         }
 
+        // onClickListener for the clear button
         clearButton.setOnClickListener {
             numberEditText.text.clear() // Clears the EditText view
         }
     }
 }
 
-// TemporaryActivity.kt
 
 
 
